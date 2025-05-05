@@ -51,7 +51,7 @@ services:
   capture:
     image: ghcr.io/bluewave-labs/capture:latest
     environment:
-      - API_SECRET=${API_SECRET}
+      - API_SECRET=${CAPTURE_SECRET:-secure}
     ports:
       - "59232:59232"
     volumes:
