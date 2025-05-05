@@ -19,7 +19,7 @@ services:
     environment:
       - DB_CONNECTION_STRING=mongodb://mongodb:27017/uptime_db?replicaSet=rs0
       - REDIS_URL=redis://redis:6379
-      - CLIENT_HOST=http://localhost
+      - CLIENT_HOST=http://176.9.10.252:9999
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
   redis:
